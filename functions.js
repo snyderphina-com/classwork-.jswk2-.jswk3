@@ -98,7 +98,7 @@ Write a JS code that calculates the square of diffrent variables using function 
 let square = function(num) {
     return num * num;
    
-}
+};
 prompt = require("prompt-sync")();
 let number = Number(prompt("Enter a number to calculate its square: "));
 //let result = square(number);
