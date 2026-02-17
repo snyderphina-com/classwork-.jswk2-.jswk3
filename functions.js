@@ -50,6 +50,16 @@ function functionName(parameters) {
 
 // console.log("The area of the rectangle is: " + rectangleArea); // Output: The area of the rectangle is: 15
 
+function calculateArea(width, height) {
+    let area = width * height;
+    return area;
+}
+const prompt = require("prompt-sync")();
+let rectWidth = Number(prompt("Enter the width of the rectangle: "));
+let rectHeight = Number(prompt("Enter the height of the rectangle: "));
+let rectangleArea = calculateArea(rectWidth, rectHeight);
+console.log("The area of the rectangle is: " + rectangleArea); // Output: The area of the rectangle is: [calculated area]
+
 //Write a function that receives radius of a circle and calculates its area  based on that radius, and returns the result.
 function calculateCircleArea(radius) {
     let area = Math.PI * Math.pow(radius, 2);
