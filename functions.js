@@ -30,24 +30,33 @@ function functionName(parameters) {
 
 
 //Example;Writea function that receives a username and outputs greetings followed by the username.
-function greetUser(username) {
-    console.log("Hello, " + username + "! Welcome to our website.");
-}
+// function greetUser(username) {
+//     console.log("Hello, " + username + "! Welcome to our website.");
+// }
 // //Call the function with a username
 // const prompt = require("prompt-sync")();
 // let userName = prompt("Enter your username: ");
 // greetUser(userName); // Output: Hello, [username]! Welcome to our website.
 
 //More detailed example; Write a function that calculates the area of a rectangle given its width and height, and returns the result.
-function calculateArea(width, height) {
-    let area = width * height;
+// function calculateArea(width, height) {
+//     let area = width * height;
+//     return area;
+// }
+// //Call the function with width and height values
+// let rectWidth = 5;
+// let rectHeight = 3;
+// let rectangleArea = calculateArea(rectWidth, rectHeight);
+
+// console.log("The area of the rectangle is: " + rectangleArea); // Output: The area of the rectangle is: 15
+
+//Write a function that receives radius of a circle and calculates its area  based on that radius, and returns the result.
+function calculateCircleArea(radius) {
+    let area = Math.PI * Math.pow(radius, 2);
     return area;
 }
-//Call the function with width and height values
-let rectWidth = 5;
-let rectHeight = 3;
-let rectangleArea = calculateArea(rectWidth, rectHeight);
 
-console.log("The area of the rectangle is: " + rectangleArea); // Output: The area of the rectangle is: 15
-
-//Write a function that receives radius of a circle and calculates its area 
+prompt = require("prompt-sync")();
+let circleRadius = Number(prompt("Enter the radius of the circle: "));
+let circleArea = calculateCircleArea(circleRadius);
+console.log("The area of the circle is: " + circleArea.toFixed(2)); 
