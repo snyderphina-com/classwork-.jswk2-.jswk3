@@ -95,11 +95,21 @@ Write a JS code that calculates the square of diffrent variables using function 
 
 */
 
-let square = function(num) {
-    return num * num;
+// let square = function(num) {
+//     return num * num;
    
-};
-prompt = require("prompt-sync")();
-let number = Number(prompt("Enter a number to calculate its square: "));
-//let result = square(number);
-console.log("The square of " + number + " is: " + square(number));
+// };
+// prompt = require("prompt-sync")();
+// let number = Number(prompt("Enter a number to calculate its square: "));
+// //let result = square(number);
+// console.log("The square of " + number + " is: " + square(number));
+
+//scope of variables in function expression
+//Types of scope: global scope, local scope, block scope    
+
+let sum=0;
+for(let i=0;i<=5;i++){
+     sum+=i;
+     console.log(sum);
+     
+}

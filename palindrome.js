@@ -89,6 +89,7 @@ if (result.isPalindrome) {
 */
 
 //BY USING TWO POINTER// Function expression using two-pointer approach
+
 /*const checkPalindrome = function(str) {
     // Clean the string: remove non-alphanumerics and lowercase
     const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
