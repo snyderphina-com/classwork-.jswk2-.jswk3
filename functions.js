@@ -107,9 +107,45 @@ Write a JS code that calculates the square of diffrent variables using function 
 //scope of variables in function expression
 //Types of scope: global scope, local scope, block scope    
 
-let sum=0;
-for(let i=0;i<=5;i++){
-     sum+=i;
-     console.log(sum);
-     
-}
+// let sum=0;
+
+// for(let i=0;i<=5;i++){
+//      sum+=i;
+   
+// }
+//   console.log(sum);
+
+  //ARROW FUNCTIONS     00000000000000000000000000000000000000000000000000000000000000000000
+/*
+Arrow functions are a more concise way to write functions in JavaScript. They were introduced in ES6 (ECMAScript 2015) and provide a shorter syntax compared to traditional function expressions. Arrow functions also have some differences in behavior, such as how they handle the 'this' keyword.
+
+Syntax:
+const functionName = (parameters) => {
+     code to be executed
+     return value; // optional
+};
+
+If the function has only one parameter, you can omit the parentheses around the parameter. If the function body consists of a single expression, you can omit the curly braces and the 'return' keyword, and the expression will be returned by default.
+
+Example:
+const add = (a, b) => a + b;
+console.log(add(2, 3)); // Output: 5
+
+In this example, we defined an arrow function called 'add' that takes two parameters 'a' and 'b', and returns their sum. The function is then called with the arguments 2 and 3, and the result is logged to the console.
+*/   
+// let variable=(parameter)=>{
+//     return parameter*parameter;
+// };
+// const prompt = require("prompt-sync")();
+// let number = Number(prompt("Enter a number to calculate its square: "));
+// console.log("The square of " + number + " is: " + variable(number));  
+// let sum = (a, b) => {
+//    return  a + b};
+// console.log(sum(5, 10)); // Output: 15
+
+let greetings=()=>"Hello, welcome to our website!";
+console.log(greetings());
+
+
+let square = num => num * num;
+console.log("The square of 5 is: " + square(5)); // Output: The square of 5 is: 25
