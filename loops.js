@@ -1,6 +1,6 @@
 //SWITCH STATEMENT
 //Switch case satements executes different blocks of codes based
-//  on  the value of a give espresion.
+//  on  the value of a give expression.
 
 // //Example
 // const prompt = require("prompt-sync")({ sigint: true });
@@ -221,11 +221,12 @@
     }
     console.log(spaces + stars); // Print spaces followed by stars to create an isosceles triangle
 }   witout using repeat method
+   */
 for (let i = 1; i <= 5; i++) {
     let stars = "";
     let spaces = "";
     for (let s = 1; s <= 5 - i; s++) { // Calculate the number of spaces needed for centering
-        spaces += " ";
+        spaces += "+";
     }
     for (let j = 1; j <= (2 * i - 1); j++) { // Calculate the number of stars needed for each row
         stars += "*";
@@ -234,7 +235,7 @@ for (let i = 1; i <= 5; i++) {
 }
 
 
- */
+
 
 
 //Write a JS code that prints all prime numbers between 1 and 100 using nested loops.
@@ -315,18 +316,18 @@ for (let i = 1; i <= 5; i++) {
 // console.log("Loop has completed.");          
 
 //example of break and continue in a nested loop
-// for (let i = 1; i <= 3; i++) {
-//     for (let j = 1; j <= 3; j++) {
-//         if (i === 2 && j === 2) {
-//             break; // Exit the inner loop when i is 2 and j is 2
-//         }
-//         if (i === 1 && j === 1) {
-//             continue; // Skip the rest of the inner loop when i is 1 and j is 1
-//         }
-//         console.log(`i: ${i}, j: ${j}`);
-//     }
-// }
-// console.log("Outer loop has completed.");
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+        if (i === 2 && j === 2) {
+            break; // Exit the inner loop when i is 2 and j is 2
+        }
+        if (i === 1 && j === 1) {
+            continue; // Skip the rest of the inner loop when i is 1 and j is 1
+        }
+        console.log(`i: ${i}, j: ${j}`);
+    }
+}
+console.log("Outer loop has completed.");
 
 
 /*
